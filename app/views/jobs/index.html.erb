@@ -1,0 +1,57 @@
+<h1>Listing jobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Salary</th>
+      <th>Location</th>
+      <th>Time</th>
+      <th>Content</th>
+      <th>Meal</th>
+      <th>Restriction</th>
+      <th>Insurance</th>
+      <th>Num</th>
+      <th>Subsidy</th>
+      <th>Contact</th>
+      <th>Created date</th>
+      <th>Expire date</th>
+      <th>Tag</th>
+      <th>Title</th>
+      <th>Company</th>
+      <th>Company</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jobs.each do |job| %>
+      <tr>
+        <td><%= job.salary %></td>
+        <td><%= job.location %></td>
+        <td><%= job.time %></td>
+        <td><%= job.content %></td>
+        <td><%= job.meal %></td>
+        <td><%= job.restriction %></td>
+        <td><%= job.insurance %></td>
+        <td><%= job.num %></td>
+        <td><%= job.subsidy %></td>
+        <td><%= job.contact %></td>
+        <td><%= job.created_date %></td>
+        <td><%= job.expire_date %></td>
+        <td><%= job.tag %></td>
+        <td><%= job.title %></td>
+        <td><%= job.company %></td>
+        <td><%= job.company_id %></td>
+        <td><%= link_to 'Show', job %></td>
+        <td><%= link_to 'Edit', edit_job_path(job) %></td>
+        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job', new_job_path %>

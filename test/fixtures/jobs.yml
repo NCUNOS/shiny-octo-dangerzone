@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  salary: MyString
+  location: MyString
+  time: MyString
+  content: MyText
+  meal: MyString
+  restriction: MyString
+  insurance: MyString
+  num: 1
+  subsidy: MyString
+  contact: MyString
+  created_date: 2014-02-05
+  expire_date: 2014-02-05
+  tag: MyString
+  title: MyString
+  company: MyString
+  company_id: 1
+
+two:
+  salary: MyString
+  location: MyString
+  time: MyString
+  content: MyText
+  meal: MyString
+  restriction: MyString
+  insurance: MyString
+  num: 1
+  subsidy: MyString
+  contact: MyString
+  created_date: 2014-02-05
+  expire_date: 2014-02-05
+  tag: MyString
+  title: MyString
+  company: MyString
+  company_id: 1
